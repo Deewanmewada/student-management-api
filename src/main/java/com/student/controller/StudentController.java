@@ -26,7 +26,6 @@ public class StudentController {
 	
 	@PostMapping("/savestudent")
 	public String saveStudent(@RequestBody StudentRequest request) {
-		
 		return  service.saveStudent(request);
 		
 		
@@ -36,7 +35,6 @@ public class StudentController {
 	//get all students
 	@GetMapping("/findstudent")
 	public List<StudentEntity> getAllStudents() {
-		
 		List<StudentEntity> students = service.getAllStudents();
 		
 		return  students;
