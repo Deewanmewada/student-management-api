@@ -44,6 +44,7 @@ public class StudentController {
 	
 	@GetMapping("/findbyid/{id}")
 	public StudentEntity findById(@PathVariable("id") int id) {
+		
 	    System.out.println("Controller received id = " + id);
 		return service.getStudentById(id);
 		
